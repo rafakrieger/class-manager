@@ -245,6 +245,7 @@ tbody tr td:first-child {
     display: grid;
     grid-template-columns: 64px 1fr;
     align-items: center;
+    padding-block-end: 38px;
 }
 
 tbody tr td:first-child span {

@@ -2,67 +2,72 @@
   "students": [
     {
       "id": 1,
-      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
-      "name": "Rafael Bruno",
-      "email": "rafabruno@gmail.com",
-      "birth": 443491200000,
+      "avatar_url": "https://nova-escola-producao.s3.amazonaws.com/tunxSkGu84NNEkscfMQUVeRzZD62xuejkA7ZhCD79kyDMjHzpWW2b7MgT62N/menina-faz-exercicio-no-caderno-na-escola.jpg",
+      "name": "Rafaela Souza",
+      "email": "rafasouza@gmail.com",
+      "birth": 1264032000000,
       "grade": "F5",
       "hours": "40"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://www.revide.com.br/media/upload/noticias/2019/07/23/15/03/olimpiada_de_matematica_antonio_augusto_piton_31.jpeg",
+      "name": "Antônio Prado",
+      "email": "aprado@hotmail.com",
+      "birth": 1072915200000,
+      "grade": "M3",
+      "hours": "50"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://www.rbsdirect.com.br/imagesrc/15715409.jpg",
+      "name": "Ronaldo Assis",
+      "email": "ronaldinhobruxo@yahoo.com",
+      "birth": 322444800000,
+      "grade": "M1",
+      "hours": "30"
     }
   ],
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
-      "birth": -220320000000,
-      "name": "Jorge Roberto Krieger",
+      "avatar_url": "https://www.estudopratico.com.br/wp-content/uploads/2013/08/a-filosofia-de-jean-jacques-rousseau-1200x675.jpg",
+      "birth": -8126265600000,
+      "name": "Jean-Jacques Rousseau",
       "graduation": "master",
       "class_type": "P",
       "classes": [
-        "direito penal",
-        " direito constitucional",
-        " paraquedismo",
-        " sinuca",
-        " letras francês"
+        "filosofia",
+        " política",
+        " literatura"
       ],
       "created": 1589339943457
     },
     {
       "id": 2,
-      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
-      "birth": 349401600000,
-      "name": "Jessica Krieger",
-      "graduation": "college",
+      "avatar_url": "https://www.comunidadeculturaearte.com/wp-content/uploads/2016/04/Simone-de-Beauvoir-016-1.jpg",
+      "birth": -1955923200000,
+      "name": "Simone de Beauvoir",
+      "graduation": "doctor",
       "class_type": "E",
       "classes": [
-        "moda"
+        "filosofia",
+        " ciências políticas"
       ],
       "created": 1589340838872
     },
     {
       "id": 3,
-      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
-      "birth": 430790400000,
-      "name": "Bruna Arruda",
-      "graduation": "doctor",
-      "class_type": "E",
-      "classes": [
-        "química",
-        " engenharia"
-      ],
-      "created": 1589340876292
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
-      "birth": 1487116800000,
-      "name": "Daniel Krieger",
-      "graduation": "high",
+      "avatar_url": "https://www.conamp.org.br/blog/wp-content/uploads/2017/10/127398-rui-barbosa-e-o-direito-brasileiro-a-luta-pela-democracia-1000x640.jpg",
+      "birth": -3791750400000,
+      "name": "Ruy Barbosa",
+      "graduation": "master",
       "class_type": "P",
       "classes": [
-        "mecânica"
+        "direito",
+        " jornalismo"
       ],
-      "created": 1589431312168
+      "created": 1589340876292
     }
   ]
 }
