@@ -1,0 +1,295 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+* {
+    margin:0;
+    padding:0;
+    border: none;
+}
+
+:root {
+    --mybrown: #1e5e2f; 
+    --whitey: #eeeeee;
+    --darkbg: #111111;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--darkbg);;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--whitey);
+    width: 100%;  
+    box-sizing: border-box;     
+}
+
+.nf h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 80px;
+}
+
+.links {
+    text-align: center;    
+    font-size: 20px;    
+}
+
+.links a + a {           
+    margin-left: 32px; 
+}
+
+.links a {    
+    text-decoration: none;
+    color: var(--mybrown); 
+    position: relative; 
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--darkbg);
+}
+
+.links a::after {
+    content: "";    
+    width: 0;
+    height: 2px;
+    background-color: var(--darkbg);
+    position: absolute;
+    left: 0;
+    bottom: -4px;   
+}
+
+.links a:hover::after {
+    width: 100%;    
+    transition: all 800ms cubic-bezier(0.80, 0.84, 0.15, 0.84);
+}
+
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 20px auto;
+    box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.8);     
+    animation: show 800ms ease-out;    
+}
+
+@keyframes show {
+    from {
+        opacity: 0;        
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* === TEACHER INFO === */
+
+.details {
+    padding: 16px 32px;
+}
+
+.info {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+}
+
+.info:first-of-type { 
+    border:none;
+}
+
+.details h3,
+.info div:nth-child(1) {
+    color: var(--mybrown);
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+
+.info div:nth-child(2) {
+    color: var(--darkbg);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details h3 {
+    color: var(--darkbg); 
+    text-transform: uppercase;    
+    font-weight: bold;
+}
+
+/* LABELS */
+
+.details .info span {
+    padding: 8px 16px;
+    background-color: var(--mybrown); 
+    border-radius: 8px;
+    color: var(--whitey);
+    margin-right: 4px;
+    margin-top: 6px; 
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* FORM */
+
+input {
+    width: 100%;
+    outline: none;
+    color: var(--darkbg);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+    color: cadetblue;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+input[type="date"] {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 16px; 
+    font-weight: normal;
+    color: cadetblue;
+}
+
+button[type="submit"], a.button {
+    padding: 8px 32px;
+    background-color: var(--darkbg);
+    border-radius: 4px;
+    margin-top: 16px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+select {    
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    outline: none;
+    color: var(--darkbg);
+    font-weight: bold;
+    font-size: 18px;    
+}
+
+option, select:invalid {
+    font-weight: normal;
+    color: cadetblue;
+    font-size: 16px;    
+}
+
+#form-delete button[type="submit"] {    
+    background-color: maroon;
+}
+
+.buttons {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px
+}
+
+/* INDEX TEACHERS */
+
+.table-container {
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;    
+}
+
+.table-container table {
+    border-spacing: 0;    
+}
+
+td, th {
+    padding: 16px;
+    border-bottom: 1px solid cadetblue;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: cadetblue
+}
+
+td {
+    font-weight: bold;    
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px var(--mybrown);
+    border: 2px solid white;
+}
+
+tbody tr td div {
+    line-height: 23px;
+}
+
+tbody tr td:last-child a,
+.table-container a {
+    background-color: var(--darkbg);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--whitey);
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.table-container > a {    
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: bold;    
+}
+
+.table-container thead tr th, td {
+    text-align:center;
+}
+
+td:nth-child(2) span{
+    padding: 8px 16px;
+    background-color: var(--mybrown); 
+    border-radius: 8px;
+    color: var(--whitey);    
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 4px;
+    line-height: 34px;      
+}

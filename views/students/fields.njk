@@ -1,0 +1,101 @@
+<div class="info">
+            <div>Avatar URL</div>
+            <div>
+                <input 
+                    type="url"
+                    name="avatar_url"
+                    placeholder="http://"
+                    value="{{ student.avatar_url }}">                    
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Nome do aluno</div>
+            <div>
+                <input 
+                    type="text"
+                    name="name"
+                    value="{{ student.name }}">
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Email</div>
+            <div>
+                <input 
+                    type="email"
+                    name="email"
+                    value="{{ student.email }}">
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Data de nascimento</div>
+            <div>
+                <input
+                    type="date" 
+                    name="birth"
+                    value="{{ student.birth }}">
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Ano escolar</div>
+            <div>
+                <select required name="grade">
+                    <option value="" disabled selected hidden>Selecione</option>
+                    <option value="F5"
+                        {% if student.grade == "F5" %}
+                            selected
+                        {% endif %}>5º ano do Ensino Fundamental
+                    </option>
+                    <option value="F6"
+                        {% if student.grade == "F6" %}
+                            selected
+                        {% endif %}>6º ano do Ensino Fundamental
+                    </option>
+                    <option value="F7"
+                        {% if student.grade == "F7" %}
+                            selected
+                        {% endif %}>7º ano do Ensino Fundamental
+                    </option>
+                    <option value="F8"
+                        {% if student.grade == "F8" %}
+                            selected
+                        {% endif %}>8º ano do Ensino Fundamental
+                    </option>
+                    <option value="F9"
+                        {% if student.grade == "F9" %}
+                            selected
+                        {% endif %}>9º ano do Ensino Fundamental
+                    </option>       
+                    <option value="M1"
+                        {% if student.grade == "M1" %}
+                            selected
+                        {% endif %}>1º ano do Ensino Médio
+                    </option>       
+                    <option value="M2"
+                        {% if student.grade == "M2" %}
+                            selected
+                        {% endif %}>2º ano do Ensino Médio
+                    </option>       
+                    <option value="M3"
+                        {% if student.grade == "M3" %}
+                            selected
+                        {% endif %}>3º ano do Ensino Médio
+                    </option>                       
+                </select>                
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Carga horária semanal</div>
+            <div>
+                <input
+                    type="number" 
+                    name="hours"
+                    value="{{ student.hours }}">
+            </div>
+        </div>
+
+        <button type="submit">Salvar</button>

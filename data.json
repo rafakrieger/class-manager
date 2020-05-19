@@ -1,0 +1,68 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
+      "name": "Rafael Bruno",
+      "email": "rafabruno@gmail.com",
+      "birth": 443491200000,
+      "grade": "F5",
+      "hours": "40"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
+      "birth": -220320000000,
+      "name": "Jorge Roberto Krieger",
+      "graduation": "master",
+      "class_type": "P",
+      "classes": [
+        "direito penal",
+        " direito constitucional",
+        " paraquedismo",
+        " sinuca",
+        " letras francês"
+      ],
+      "created": 1589339943457
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
+      "birth": 349401600000,
+      "name": "Jessica Krieger",
+      "graduation": "college",
+      "class_type": "E",
+      "classes": [
+        "moda"
+      ],
+      "created": 1589340838872
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
+      "birth": 430790400000,
+      "name": "Bruna Arruda",
+      "graduation": "doctor",
+      "class_type": "E",
+      "classes": [
+        "química",
+        " engenharia"
+      ],
+      "created": 1589340876292
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://source.unsplash.com/collection/517198/800x800",
+      "birth": 1487116800000,
+      "name": "Daniel Krieger",
+      "graduation": "high",
+      "class_type": "P",
+      "classes": [
+        "mecânica"
+      ],
+      "created": 1589431312168
+    }
+  ]
+}

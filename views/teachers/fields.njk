@@ -1,0 +1,89 @@
+<div class="info">
+            <div>Avatar URL</div>
+            <div>
+                <input 
+                    type="url"
+                    name="avatar_url"
+                    placeholder="http://"
+                    value="{{ teacher.avatar_url }}">                    
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Nome completo</div>
+            <div>
+                <input 
+                    type="text"
+                    name="name"
+                    placeholder="Nome do professor"
+                    value="{{ teacher.name }}">
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Data de nascimento</div>
+            <div>
+                <input
+                    type="date" 
+                    name="birth"
+                    value="{{ teacher.birth }}">
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Escolaridade</div>
+            <div>
+                <select required name="graduation">
+                    <option value="" disabled selected hidden>Selecione</option>
+                    <option value="high"
+                        {% if teacher.graduation == "high" %}
+                            selected
+                        {% endif %}>Ensino Médio Completo
+                    </option>
+                    <option value="college"
+                        {% if teacher.graduation == "college" %}
+                            selected
+                        {% endif %}>Ensino Superior Completo
+                    </option>
+                    <option value="master"
+                        {% if teacher.graduation == "master" %}
+                            selected
+                        {% endif %}>Mestrado
+                    </option>
+                    <option value="doctor"
+                        {% if teacher.graduation == "doctor" %}
+                            selected
+                        {% endif %}>Doutorado
+                    </option>                
+                </select>                
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Tipo de aula</div>
+            <div>
+                <span><input type="radio" name="class_type" value="P"
+                    {% if teacher.class_type == "P" %}
+                        checked
+                    {% endif %}>Presencial
+                </span>
+                <span><input type="radio" name="class_type" value="E"
+                    {% if teacher.class_type == "E" %}
+                        checked
+                    {% endif %}>EAD
+                </span>                
+            </div>
+        </div>
+
+        <div class="info">
+            <div>Aulas</div>
+            <div>
+                <input type="text"
+                       name="classes"
+                       placeholder="Separe as aulas por vírgula"
+                       value="{{ teacher.classes }}"
+                       >
+            </div>
+        </div>
+
+        <button type="submit">Salvar</button>
