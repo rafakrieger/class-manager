@@ -2,7 +2,7 @@
 *Projeto desenvolvido durante o bootcamp Launchbase, da Rocketseat*
 
 
-Ferramenta para administração de portal de educação, com CRUD de professores e alunos. 
+* Ferramenta para administração de portal de educação, com CRUD de professores e alunos. 
 
 ![Create Page](/public/01.png)
 
@@ -10,4 +10,4 @@ Ferramenta para administração de portal de educação, com CRUD de professores
 
 ![Create Page](/public/03.png)
 
-Armazenamento de dados em arquivo data.json, ainda sem persistência em banco. 
+* Armazenamento de dados em arquivo data.json, ainda sem persistência em banco. 
